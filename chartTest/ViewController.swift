@@ -138,6 +138,8 @@ class ViewController: UIViewController {
         
         xAxis.valueFormatter = formatter
         chrtChart.xAxis.labelPosition = .bottom
+        //chrtChart.xAxis.axisRange = 2.0
+        chrtChart.xAxis.labelCount = 2 //  Only show 2 labels
         chrtChart.xAxis.drawGridLinesEnabled = false // Turns off grid lines for X Axis
         chrtChart.xAxis.labelTextColor = UIColor(red: 178/255, green: 223/255, blue: 219/255, alpha: 1)
         chrtChart.xAxis.labelFont = UIFont(name: "Helvetica-Bold", size: 20.0)!
@@ -147,7 +149,6 @@ class ViewController: UIViewController {
         chrtChart.xAxis.valueFormatter = xAxis.valueFormatter
         chrtChart.chartDescription?.enabled = false // Turns off chart description
         chrtChart.legend.enabled = true // Tell you what the line is showing, eg. Currency Rate
-        
         
         // Right Axis
         chrtChart.rightAxis.drawLabelsEnabled = false // Disable Label on right axis
